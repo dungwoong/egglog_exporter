@@ -1,0 +1,260 @@
+{
+    "nodes": {
+        "primitive-i64-2": {
+            "op": "2",
+            "children": [],
+            "eclass": "i64-2",
+            "cost": 1.0,
+            "subsumed": false
+        },
+        "function-0-__main___Stmt_prop": {
+            "op": "\u00b7.prop",
+            "children": [
+                "function-0-__main___Stmt_IntLiteral"
+            ],
+            "eclass": "i64-2",
+            "cost": 1.0,
+            "subsumed": false
+        },
+        "primitive-i64-4": {
+            "op": "4",
+            "children": [],
+            "eclass": "i64-4",
+            "cost": 1.0,
+            "subsumed": false
+        },
+        "function-1-__main___Stmt_prop": {
+            "op": "\u00b7.prop",
+            "children": [
+                "function-1-__main___Stmt_IntLiteral"
+            ],
+            "eclass": "i64-4",
+            "cost": 1.0,
+            "subsumed": false
+        },
+        "primitive-i64-6": {
+            "op": "6",
+            "children": [],
+            "eclass": "i64-6",
+            "cost": 1.0,
+            "subsumed": false
+        },
+        "function-2-__main___Stmt_prop": {
+            "op": "\u00b7.prop",
+            "children": [
+                "function-2-__main___Stmt_IntLiteral"
+            ],
+            "eclass": "i64-6",
+            "cost": 1.0,
+            "subsumed": false
+        },
+        "primitive-i64-1": {
+            "op": "1",
+            "children": [],
+            "eclass": "i64-1",
+            "cost": 1.0,
+            "subsumed": false
+        },
+        "function-0-__main___Stmt_IntLiteral": {
+            "op": "Stmt.IntLiteral",
+            "children": [
+                "primitive-i64-1"
+            ],
+            "eclass": "__main__.Stmt-0",
+            "cost": 1.0,
+            "subsumed": false
+        },
+        "function-1-__main___Stmt_IntLiteral": {
+            "op": "Stmt.IntLiteral",
+            "children": [
+                "split-0-primitive-i64-2"
+            ],
+            "eclass": "__main__.Stmt-1",
+            "cost": 1.0,
+            "subsumed": false
+        },
+        "primitive-i64-3": {
+            "op": "3",
+            "children": [],
+            "eclass": "i64-3",
+            "cost": 1.0,
+            "subsumed": false
+        },
+        "function-2-__main___Stmt_IntLiteral": {
+            "op": "Stmt.IntLiteral",
+            "children": [
+                "primitive-i64-3"
+            ],
+            "eclass": "__main__.Stmt-3",
+            "cost": 1.0,
+            "subsumed": false
+        },
+        "function-0-__main___Stmt_prop2": {
+            "op": "\u00b7.prop2",
+            "children": [
+                "function-0-__main___Stmt_IntLiteral"
+            ],
+            "eclass": "__main__.TestExpr-5",
+            "cost": 1.0,
+            "subsumed": false
+        },
+        "function-1-__main___Stmt_prop2": {
+            "op": "\u00b7.prop2",
+            "children": [
+                "function-1-__main___Stmt_IntLiteral"
+            ],
+            "eclass": "__main__.TestExpr-6",
+            "cost": 1.0,
+            "subsumed": false
+        },
+        "function-2-__main___Stmt_prop2": {
+            "op": "\u00b7.prop2",
+            "children": [
+                "function-2-__main___Stmt_IntLiteral"
+            ],
+            "eclass": "__main__.TestExpr-7",
+            "cost": 1.0,
+            "subsumed": false
+        },
+        "function-0-__main___TestExpr_TEST": {
+            "op": "TestExpr.TEST",
+            "children": [
+                "primitive-i64-3"
+            ],
+            "eclass": "__main__.TestExpr-5",
+            "cost": 1.0,
+            "subsumed": false
+        },
+        "function-1-__main___TestExpr_TEST": {
+            "op": "TestExpr.TEST",
+            "children": [
+                "split-0-primitive-i64-6"
+            ],
+            "eclass": "__main__.TestExpr-6",
+            "cost": 1.0,
+            "subsumed": false
+        },
+        "primitive-i64-9": {
+            "op": "9",
+            "children": [],
+            "eclass": "i64-9",
+            "cost": 1.0,
+            "subsumed": false
+        },
+        "function-2-__main___TestExpr_TEST": {
+            "op": "TestExpr.TEST",
+            "children": [
+                "primitive-i64-9"
+            ],
+            "eclass": "__main__.TestExpr-7",
+            "cost": 1.0,
+            "subsumed": false
+        },
+        "function-0-__main___Stmt_Add": {
+            "op": "Stmt.Add",
+            "children": [
+                "function-0-__main___Stmt_IntLiteral",
+                "function-1-__main___Stmt_IntLiteral"
+            ],
+            "eclass": "__main__.Stmt-2",
+            "cost": 1.0,
+            "subsumed": false
+        },
+        "function-1-__main___Stmt_Add": {
+            "op": "Stmt.Add",
+            "children": [
+                "function-0-__main___Stmt_Add",
+                "function-2-__main___Stmt_IntLiteral"
+            ],
+            "eclass": "__main__.Stmt-4",
+            "cost": 1.0,
+            "subsumed": false
+        },
+        "function-2-__main___Stmt_Add": {
+            "op": "Stmt.Add",
+            "children": [
+                "function-1-__main___Stmt_IntLiteral",
+                "function-0-__main___Stmt_IntLiteral"
+            ],
+            "eclass": "__main__.Stmt-2",
+            "cost": 1.0,
+            "subsumed": false
+        },
+        "function-3-__main___Stmt_Add": {
+            "op": "Stmt.Add",
+            "children": [
+                "function-2-__main___Stmt_IntLiteral",
+                "function-0-__main___Stmt_Add"
+            ],
+            "eclass": "__main__.Stmt-4",
+            "cost": 1.0,
+            "subsumed": false
+        },
+        "split-0-primitive-i64-2": {
+            "op": "2",
+            "children": [],
+            "eclass": "split-0-primitive-i64-2",
+            "cost": 1.0,
+            "subsumed": false
+        },
+        "split-0-primitive-i64-6": {
+            "op": "6",
+            "children": [],
+            "eclass": "split-0-primitive-i64-6",
+            "cost": 1.0,
+            "subsumed": false
+        }
+    },
+    "root_eclasses": [],
+    "class_data": {
+        "i64-2": {
+            "type": "i64"
+        },
+        "__main__.Stmt-0": {
+            "type": "__main__.Stmt"
+        },
+        "i64-4": {
+            "type": "i64"
+        },
+        "__main__.Stmt-1": {
+            "type": "__main__.Stmt"
+        },
+        "i64-6": {
+            "type": "i64"
+        },
+        "__main__.Stmt-3": {
+            "type": "__main__.Stmt"
+        },
+        "i64-1": {
+            "type": "i64"
+        },
+        "i64-3": {
+            "type": "i64"
+        },
+        "__main__.TestExpr-5": {
+            "type": "__main__.TestExpr"
+        },
+        "__main__.TestExpr-6": {
+            "type": "__main__.TestExpr"
+        },
+        "__main__.TestExpr-7": {
+            "type": "__main__.TestExpr"
+        },
+        "i64-9": {
+            "type": "i64"
+        },
+        "__main__.Stmt-2": {
+            "type": "__main__.Stmt"
+        },
+        "__main__.Stmt-4": {
+            "type": "__main__.Stmt",
+            "let": "output"
+        },
+        "split-0-primitive-i64-2": {
+            "type": "i64"
+        },
+        "split-0-primitive-i64-6": {
+            "type": "i64"
+        }
+    }
+}
