@@ -1,6 +1,6 @@
 Exports an e-graph into a nodes and children format
 
-## Example
+## Example (demo.py)
 `Stmt.Add(Stmt.Add(Stmt.IntLiteral(1), Stmt.IntLiteral(2)), Stmt.IntLiteral(3))`
 - These are symbolic nodes, difficult to work with in Python
 
